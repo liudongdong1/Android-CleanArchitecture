@@ -78,7 +78,7 @@ class ApiConnection implements Callable<String> {
     okHttpClient.setConnectTimeout(15000, TimeUnit.MILLISECONDS);
 
     return okHttpClient;
-  }
+  }   
 
   @Override public String call() throws Exception {
     return requestSyncCall();

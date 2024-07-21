@@ -30,6 +30,10 @@ public class UserListActivity extends BaseActivity implements HasComponent<UserC
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    // displays a continuous
+    // spinning animation while the activity is performing some background task or waiting for some event to occur. This
+    // type of progress indicator is often used when the user needs to wait for a long time, but the exact amount of time
+    // is not known in advance.
     requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
     setContentView(R.layout.activity_layout);
 

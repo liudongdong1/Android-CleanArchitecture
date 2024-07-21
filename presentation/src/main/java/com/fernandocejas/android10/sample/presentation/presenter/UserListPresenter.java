@@ -36,10 +36,11 @@ import javax.inject.Inject;
  */
 @PerActivity
 public class UserListPresenter implements Presenter {
-
+  // 显示示图
   private UserListView viewListView;
-
+  // 数据查询类
   private final GetUserList getUserListUseCase;
+  // domain 和 view 类之间转化
   private final UserModelDataMapper userModelDataMapper;
 
   @Inject
